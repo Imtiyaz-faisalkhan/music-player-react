@@ -4,7 +4,7 @@ function Details(props){
   return (
     <div className="details">
       <div className = "datails_img">
-        <img src={props.songDetail.img_src} alt = "Song"/>
+        <img src={process.env.PUBLIC_URL + props.songDetail.img_src}  alt = "" />
       </div>
       <h3 className="details_title">{props.songDetail.title}</h3>
       <h3 className="details_singer">{props.songDetail.artist}</h3>

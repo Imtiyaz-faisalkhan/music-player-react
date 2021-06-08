@@ -1,5 +1,6 @@
-import React,{useRef,useEffect,useState} from 'react';
+import React,{useEffect,useState} from 'react';
 import Player from './Player';
+
 
 function App() {
 
@@ -7,29 +8,29 @@ const [songs] = useState([
   {
     title : "Titaliya Warga ",
     artist : "Hary Alina",
-    audio_src : "Titliaan Warga.mp3",
-    img_src : "titaliya.jpg"
+    audio_src : "/songs/Titliaan Warga.mp3",
+    img_src: "/images/titaliya.jpg",
   },
 
   {
     title : "burjkalifa",
     artist : "Badsha",
-    audio_src : "BurjKhalifa.mp3",
-    img_src : "burjkalifa.jpg"
+    audio_src : "/songs/BurjKhalifa.mp3",
+    img_src : "/images/burjkalifa.jpg",
   },
 
   {
     title : "Care Ni Karda ",
     artist : "Honey Singh",
-    audio_src : "Care Ni Karda.mp3",
-    img_src : "care-ni-karda.jpg"
+    audio_src : "/songs/Care Ni Karda.mp3",
+    img_src : "/images/care-ni-karda.jpg"
   },
 
   {
     title : "Naach Meri Rani ",
     artist : "Milka singh",
-    audio_src : "Naach Meri Rani.mp3",
-    img_src : "nach-meri-rani.jpg"
+    audio_src : "/songs/Naach Meri Rani.mp3",
+    img_src : "/images/nach-meri-rani.jpg"
   }
 ])
 
@@ -44,10 +45,13 @@ useEffect(() => {
     return currentSongIndex+1;
   }
 })
-},[currentSongIndex,songs.length])
+},[currentSongIndex, songs.length])
+
+
 
   return (
     <div className="App">
+
       <Player
       currentSongIndex = {currentSongIndex}
       setCurrentSongIndex = {setCurrentSongIndex}
