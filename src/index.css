@@ -39,7 +39,7 @@ body {
 }
 
 .player > p {
-  color: #aaa;
+  color: #ffff;
   font-size: 14px;
   text-align: center;
   font-weight: 600;
@@ -60,8 +60,8 @@ body {
   display: block;
   margin: 50px auto;
   object-fit: contain;
-  width: 100%;
-  max-width: 250px;
+  width: 50%;
+  max-width: 25px;
   border-radius: 50%;
   box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.8),
     -6px -6px 12px rgba(255, 255, 255, 0.4);
@@ -79,7 +79,7 @@ body {
   border: 3px dashed rgba(255, 206, 0, 1);
 }
 
-.details .details-title {
+.details .details_title {
   color: #eee;
   font-size: 28px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8),
@@ -88,7 +88,7 @@ body {
   margin-bottom: 10px;
 }
 
-.details .details-artist {
+.details .details_singer {
   color: #aaa;
   font-size: 20px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8),

@@ -6,32 +6,30 @@ function App() {
 
 const [songs] = useState([
   {
-    title : "Titaliya Warga ",
-    artist : "Hary Alina",
-    audio_src : "/songs/Titliaan Warga.mp3",
-    img_src: "/images/titaliya.jpg",
-  },
-
-  {
-    title : "burjkalifa",
-    artist : "Badsha",
-    audio_src : "/songs/BurjKhalifa.mp3",
-    img_src : "/images/burjkalifa.jpg",
-  },
-
-  {
-    title : "Care Ni Karda ",
-    artist : "Honey Singh",
-    audio_src : "/songs/Care Ni Karda.mp3",
-    img_src : "/images/care-ni-karda.jpg"
-  },
-
-  {
-    title : "Naach Meri Rani ",
-    artist : "Milka singh",
-    audio_src : "/songs/Naach Meri Rani.mp3",
-    img_src : "/images/nach-meri-rani.jpg"
-  }
+      title: "Titaliya",
+      artist: "Hardy Sandhu",
+      img_src: "/images/titaliya.jpg",
+      audio_src: "/songs/Titliaan Warga.mp3",
+    },
+    {
+      title: "Nach Meri Rani",
+      artist: "Yo Yo Honey Singh",
+      img_src: "/images/nach-meri-rani.jpg",
+      src: "/songs/Naach Meri Rani.mp3",
+    },
+    {
+      title: "Care Ni Karda",
+      artist: "Yo Yo Honey Singh",
+      img_src: "/images/care-ni-karda.jpg",
+      src: "/songs/Care Ni Karda.mp3",
+    },
+    {
+      title: "Burj Khalifa",
+      artist: "Shashi",
+      img_src: "/images/burjkalifa.jpg",
+      src: "/songs/BurjKhalifa.mp3",
+    },
+    
 ])
 
 const [currentSongIndex,setCurrentSongIndex] = useState(0);
